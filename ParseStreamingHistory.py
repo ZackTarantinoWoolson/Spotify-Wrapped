@@ -6,10 +6,10 @@ from datetime import datetime
 from prettytable import PrettyTable
 
 # Define the file path
-file_path = "StreamingHistory_music_0.json"
+file_path = "PutDataHere/StreamingHistory_music_0.json"
 
 # Read JSON data from the file
-with open(os.path.join(os.path.dirname(sys.argv[0]), "StreamingHistory_music_0.json"), "r") as file:
+with open(os.path.join(os.path.dirname(sys.argv[0]), file_path), "r") as file:
     data = json.load(file)
 
 # Parse the endTime field into datetime objects
